@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Introduction html</title>
-  </head>
-  <body>
-    <p>
-      <head>
-        l'entéte
-      </head>
-      <main>le corps</main>
-      <footer>le pied de page</footer>
-      <h>Niveaux de titres (peut en avoir 6)</h>
-      <p>pour les paragraphes</p>
-      <div>un block générique</div>
-      <span>un lien générique</span>
-      <section>un ensemble (block)</section>
-      <ul>
-        <li>pour faire des listes</li>
-      </ul>
 
-      <script src="script.js"></script>
-    </p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Introduction html</title>
+  <link rel="stylesheet" href="node_modules/highlight.js/styles/default.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 class="titre">Voici la structure classique de la page html</h1>
+  <pre>
+  <code>
+<header></header>
+<main></main>
+<footer></footer>
+  </code>
+</pre>
+  <h2 class="titre">Il y a des balises block</h2>
+  <pre>
+  <code>
+<h>Niveaux de titres (peut en avoir 6)</h>
+<p>pour les paragraphes</p>
+<div>un block générique</div>
+<section>un ensemble</section>
+<ul>pour faire des listes</ul>
+<img/>
+      </code>
+    </pre>
+  <h3 class="titre">Il y a des balises Inlines</h3>
+  <pre>
+    <code>
+<li>accrocher aux lu</li>
+<input type="text"/>
+<input type="number"/>
+<output>Résultat d'un calcul</output>
+<button>pour un bouton</button>
+    </code>
+  </pre>
+  <h4 class="titre">Il y a des liens</h4>
+  <pre>
+    <code>
+<a href="">liens vers un fichier, adresse html,...</a>
+<a name="">ancre</a>
+<a href="#name">lien vers l'ancre</a>
+<!--<img src="lien vers l'image"/>-->
+    </code>
+  </pre>
+  <h5 class="titre">On relie la page html à une page css et js</h5>
+  <p>on utilise un attribut "class" pour que une balise ai un style différents ou plusieurs balises eient le méme style
+  </p>
+  <pre>
+    <code>
+<p class="bg-blue">exemple</p>
+<!--<img class="img1" src=""/>-->
+    </code>
+  </pre>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
